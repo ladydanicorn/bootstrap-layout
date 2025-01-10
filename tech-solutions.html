@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Solutions - Services</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .header-section {
+            background: linear-gradient(rgba(102, 16, 242, 0.7), rgba(111, 66, 193, 0.7)),
+                        url('/api/placeholder/1920/600') center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .service-card {
+            transition: transform 0.3s;
+            height: 100%;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .service-card:hover {
+            transform: translateY(-5px) rotate(2deg);
+        }
+        .icon-circle {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(45deg, #FF6B6B, #FF8E53);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.2);
+        }
+        .feature-icon {
+            font-size: 2rem;
+            color: white;
+        }
+        :root {
+            --primary-color: #FF6B6B;
+            --secondary-color: #4ECDC4;
+        }
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        .btn-primary:hover {
+            background-color: #ff5252;
+            border-color: #ff5252;
+        }
+        .text-primary {
+            color: var(--primary-color) !important;
+        }
+        .bg-light {
+            background-color: #F7F9FC !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Tech Solutions 🚀</h1>
+            <p class="lead">Making Cool Tech Stuff</p>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card service-card shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="icon-circle">
+                                <i class="fas fa-laptop-code feature-icon"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Websites & Apps ✨</h3>
+                            <p class="text-muted">Need a sick website? We've got you. From simple sites to fancy apps, we make stuff that looks good and works great.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="icon-circle">
+                                <i class="fas fa-mobile-alt feature-icon"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Mobile Apps 📱</h3>
+                            <p class="text-muted">Want your own app? Cool, we make those too! Whether you're on iPhone or Android, we'll build something that just works.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="icon-circle">
+                                <i class="fas fa-cloud feature-icon"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Cloud Stuff ☁️</h3>
+                            <p class="text-muted">Store your stuff in the cloud! We'll set up everything so you don't have to worry about where your data goes or if it's safe.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featurette Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Why Choose Us</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="icon-circle mb-3">
+                            <i class="fas fa-clock feature-icon"></i>
+                        </div>
+                        <h3 class="h5">Quick</h3>
+                        <p>We don't waste time. You'll get your stuff done fast.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="icon-circle mb-3">
+                            <i class="fas fa-shield-alt feature-icon"></i>
+                        </div>
+                        <h3 class="h5">Secure Solutions</h3>
+                        <p>Top-notch security measures to protect your data.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="icon-circle mb-3">
+                            <i class="fas fa-headset feature-icon"></i>
+                        </div>
+                        <h3 class="h5">24/7 Support</h3>
+                        <p>Round-the-clock technical support for your peace of mind.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section with Sidebar -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 pe-lg-5">
+                    <h2 class="mb-4">The Cool Dudes Behind the Code 😎</h2>
+                    <p>We're not your momma's tech company!</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h3 class="h5 mb-4">Quick Facts</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i>We've done this hundreds of times</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i>Most clients come back for more</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i>Always here when you need help</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i>No tech speak, just plain English</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="service" class="form-label">Service Interested In</label>
+                                    <select class="form-select" id="service" required>
+                                        <option value="">Select a service</option>
+                                        <option value="web">Web Development</option>
+                                        <option value="mobile">Mobile Apps</option>
+                                        <option value="cloud">Cloud Solutions</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h4 class="h5 mb-3">Contact Info</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>123 Super Street, Super City, USA</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i>(123) 456-7890</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i>info@techsolutions.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="h5 mb-3">Follow Us</h4>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="h5 mb-3">Newsletter</h4>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Enter your email" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
